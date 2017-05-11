@@ -1,1 +1,2 @@
-# leanpythonhardway
+# Learn Python Hard Way
+
