@@ -8,11 +8,11 @@
 
     * HTTPS:
 
-            git clone git@github.com:ngbug/LearnPythonHardWay.git
+            git clone https://github.com/ngbug/LearnPythonHardWay.git
 
     * SSH: (推荐)
 
-            git clone https://github.com/ngbug/LearnPythonHardWay.git
+            git clone git@github.com:ngbug/LearnPythonHardWay.git
 
 * 查看当前git库状态
 
