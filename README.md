@@ -4,35 +4,35 @@
 
 ## Git 操作
 
-### Clone仓库到本地
+* Clone仓库到本地
 
-* HTTPS:
+    * HTTPS:
 
-        git clone git@github.com:ngbug/LearnPythonHardWay.git
+            git clone git@github.com:ngbug/LearnPythonHardWay.git
 
-* SSH: (推荐)
+    * SSH: (推荐)
 
-        git clone https://github.com/ngbug/LearnPythonHardWay.git
+            git clone https://github.com/ngbug/LearnPythonHardWay.git
 
-### 查看当前git库状态
+* 查看当前git库状态
 
-    git status
+        git status
 
-### 缓存本地改动
+* 缓存本地改动
 
-    git add -A
+        git add -A
 
-### 提交改动到本地仓库
+* 提交改动到本地仓库
 
-    git commit -m "代码提交简短说明"
+        git commit -m "代码提交简短说明"
 
-### 同步(推送push)*本地仓库*到origin仓库master分支
+* 同步(推送push)*本地仓库*到origin仓库master分支
 
-    git push origin master
+        git push origin master
 
-### 同步(拉取pull)服务器origin仓库master分支到*本地当前分支*
+* 同步(拉取pull)服务器origin仓库master分支到*本地当前分支*
 
-    git pull origin master
+        git pull origin master
 
 
 
