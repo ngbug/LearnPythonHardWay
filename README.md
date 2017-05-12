@@ -18,7 +18,7 @@
 
     git status
 
-### 缓存本地改动
+### 缓存本地改动
 
     git add -A
 
@@ -26,11 +26,11 @@
 
     git commit -m "代码提交简短说明"
 
-### 同步(推送push)*本地仓库*到origin仓库master分支
+### 同步(推送push)*本地仓库*到origin仓库master分支
 
     git push origin master
 
-### 同步(拉取pull)服务器origin仓库master分支到*本地当前分支*
+### 同步(拉取pull)服务器origin仓库master分支到*本地当前分支*
 
     git pull origin master
 
