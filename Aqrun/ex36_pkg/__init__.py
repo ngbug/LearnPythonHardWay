@@ -9,6 +9,8 @@
 
 from rock_paper_scissors import start as rock_start
 from stick_tiger_chicken import start as stick_start
+from utils import str_input
+
 
 def show_welcome_menu():
     """显示大厅欢迎列表"""
@@ -34,7 +36,7 @@ def main_hall():
         show_welcome_menu()
 
         #python3.0 raw_input rename to input
-        next = input('你想玩什么游戏? > ')
+        next = str_input('你想玩什么游戏? > ')
 
         if next == '0':
             print("欢迎再来哦~~")
@@ -44,7 +46,7 @@ def main_hall():
         elif next == '2':
             stick_start()
         else:
-            print("客官，不可以哦～～")
+            print("\n~~~~~~~客官，不可以哦~~~~~~~~\n")
 
 if __name__ == '__main__':
     main_hall()
