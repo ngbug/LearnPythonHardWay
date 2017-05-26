@@ -4,7 +4,7 @@
 """
 
 from random import randrange
-
+from utils import str_input
 
 class RockPaperScissors(object):
     """Game class"""
@@ -34,7 +34,11 @@ class RockPaperScissors(object):
             0 返回游戏大厅
         ================
         """)
-        user_hand = input("出手吧 > ")
+        user_hand = str_input("出手吧 > ")
+        try:
+            user_hand = eval(user_hand)
+        except Exception:
+            user_hand = -1;
         return user_hand
 
     def showResult(self, user_hand, robot_hand):
@@ -65,7 +69,7 @@ class RockPaperScissors(object):
 
         print(template_string % (self.hands[user_hand],
                    self.hands[robot_hand]))
-        input('点击任意键继续...')
+        str_input('点击任意键继续...')
         self.run()
 
     def run(self):
@@ -73,11 +77,7 @@ class RockPaperScissors(object):
         self.generateRobotHand()
         user_hand = 0
 
-        try:
-            user_hand = eval(self.getUserHand())
-        except:
-            print("你是逗B吗？请不要乱输入...")
-            self.run()
+        user_hand = self.getUserHand()
 
         if user_hand == 0:
             print("欢迎再来~~")
